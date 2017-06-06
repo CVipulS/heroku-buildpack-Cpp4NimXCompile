@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+cd $1
+files=(compile_*.sh)
+if [ -f "${files[0]}" ]; then
+    echo "C++ by Nim CrossCompile" && exit 0
+else
+  echo "no" && exit 1
+fi

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cd $1
+thefile=`ls compile_*.sh`
+chmod +x ${thefile}
+./${thefile}
+rm nimbase.h *.cpp ${thefile} *.o
